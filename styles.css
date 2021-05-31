@@ -1,3 +1,24 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Black.ttf"),
+         url("fonts/Raleway-BlackItalic.ttf"),
+         url("fonts/Raleway-Bold.ttf"),
+         url("fonts/Raleway-BoldItalic.ttf"),
+         url("fonts/Raleway-ExtraBold.ttf"),
+         url("fonts/Raleway-ExtraLight.ttf"),
+         url("fonts/Raleway-ExtraLightItalic.ttf"),
+         url("fonts/Raleway-Italic.ttf"),
+         url("fonts/Raleway-Light.ttf"),
+         url("fonts/Raleway-LightItalic.ttf"),
+         url("fonts/Raleway-Medium.ttf"),
+         url("fonts/Raleway-MediumItalic.ttf"),
+         url("fonts/Raleway-Regular.ttf"),
+         url("fonts/Raleway-SemiBold.ttf"),
+         url("fonts/Raleway-SemiBoldItalic.ttf"),
+         url("fonts/Raleway-Thin.ttf"),
+         url("fonts/Raleway-ThinItalic.ttf");
+}
+
+#navbar {
+    font-family: "Raleway-Bold";
 }

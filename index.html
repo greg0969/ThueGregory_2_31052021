@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://kit.fontawesome.com/f7a1214a9b.js" crossorigin="anonymous"></script>
     <meta charset="utf-8"/>
     <title>Reservia</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -18,18 +19,25 @@
             </div>
         </div>
         <div class="main">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2><p>En plein centre ville ou en plein nature</p>
+            <div>
+                <strong>Trouvez votre hébergement pour des vacances de rêve</strong><br> <p>En plein centre ville ou en plein nature</p>
+                           
+            </div>
             <div class="recherche">
-    
+                <i class="fa-solid fa-location-dot"></i>
+                <form> 
+                   <input type="text" name=text" class="search" placeholder"Recherchez ici!">
+                    <input type="submit" name="Rechercher" class="submit" value="Rechercher">
+                  </form>
             </div>
             <div class="filtres">
-                <h2>Filtres</h2>
-                <a href="">Économique</a>
-                <a href="">Familial</a>
-                <a href="">Romantique</a>
-                <a href="">Animaux autorisés</a>
+                Filtres
+                <a href=""><i class="fas fa-money-bill-wave"></i> Économique</a>
+                <a href=""><i class="fas fa-child"></i> Familial</a>
+                <a href=""><i class="fas fa-heart"></i> Romantique</a>
+                <a href=""><i class="fas fa-dog"></i> Animaux autorisés</a>
             </div>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             <div id="listehebergements">
                 <div class="hebergements">
         
@@ -44,7 +52,7 @@
                 </div>    
         </div>
         <div class="footer">
-
+         
         </div>        
     </div>
 </div>   

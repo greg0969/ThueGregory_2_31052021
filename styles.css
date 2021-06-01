@@ -19,12 +19,17 @@
          url("fonts/Raleway-ThinItalic.ttf");
 }
 
+.header { grid-area: header ; }
+.main { grid-area: main; padding-left: 3% ; }
+.footer { grid-area: footer; }
+
 .grid-container{
-    display: inline-grid ;
-    grid-template-columns: auto auto auto ;
-    grid-gap: 70px ;
-    float: right ;
-    margin-right: 5% ;
-    margin-top: 2% ;
-    font-family: Raleway ;
+    display: grid ;
+    grid-template-areas:
+    "header header header header header header"
+    "main main main main main main" 
+    "footer footer footer footer footer footer";
+    grid-gap: 10px ;
+    font-family: "Raleway" ;
 }
+

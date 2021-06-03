@@ -7,25 +7,49 @@
     font-family: "Raleway-Medium" ;
     src: url("fonts/Raleway-Medium.ttf");
 }
+.flex-container { 
+    font-family: "Raleway-Medium";
+    margin: 2%;
+}
 
-.header { grid-area: header ; }
-.main { grid-area: main ; 
-        padding-left: 3% ;
-     }
-.footer { grid-area: footer; }
+.flex-container .header{
+    display: flex ;
+    flex-direction: row;
+}
 
-.grid-container{
-    display: grid ;
-    grid-template-areas:
-    "header header header header header header"
-    "main main main main main main" 
-    "footer footer footer footer footer footer";
-    grid-gap: 10px ;
-    font-family: "Raleway-Regular" ;
+.flex-container .recherche { 
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.header img { 
+    width: 40% ; 
+    margin-left: 3% ; 
+    margin-top: 2% ;
+    padding-bottom: 2%;
+}
+
+.header a { 
+    text-decoration: none;
+    margin-left: 20%;
+    padding-left: 3%;
+}
+
+.flex-container .main { 
+    display: flex;
+    flex-direction: column;
+}
+
+.main p { 
+    margin-bottom: 3%;
+}
+
+form { 
+    margin-left: 2%;
 }
 
 .filtres { 
-    display: inline;
     font-weight: bold;
     font-family: "Raleway-Medium";
     font-weight:900;
@@ -36,15 +60,34 @@
     font-style: normal;
     color: black;
     text-decoration: none;
+    border-radius: 50%;
+    border-color: #DEEBFF;
+    border: 10%;
+    border-style: solid;
 }
 
 .filtres a:hover {
     color: #0065FC;
 }
 
+.filtres p {
+    margin-top: 2%;
+    font-weight: initial;
+  }
+
 .recherche { 
     height: 30% ;
-    padding-bottom: 1%;
+    padding-bottom: 1% ;
+    color: Black;
+    margin-left: 1%;
+}
+
+.recherche i { 
+    float: left ;
+    clear: both ;
+    border-radius: 100%;
+    padding: 0.8em;
+    background-color: #DEEBFF;
 }
 
 input[type=text] {
@@ -52,6 +95,7 @@ input[type=text] {
     padding: 1%;
     box-sizing: border-box;
     border: none;
+    text-align: center;
   }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -69,3 +113,12 @@ input[type=button], input[type=submit], input[type=reset] {
   i {
       color: #0065FC;
   }
+
+  p i {
+      margin-right: 2%;
+  }
+
+  
+
+
+ 

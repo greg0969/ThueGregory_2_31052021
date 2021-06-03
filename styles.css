@@ -135,12 +135,46 @@ input[type=button], input[type=submit], input[type=reset] {
 
 /* liste hebergements */
 
+#listehebergements { 
+    display: flex;
+    justify-content: space-between;
 
-.hebergements img{
+}
+
+.hebergements { 
+    
     display: flex;
     flex-direction: row;
-    
-    width: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: auto;
+    width: 70%;
+}
+
+.populaires { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+
+}
+
+.hebergements img { 
+    width: 28%;
+    height: 15%;
+    border: none;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10%;
+}
+
+.populaires img { 
+    width: 100%;
+}
+
+/*.hebergements img{
+    display: flex;
+    flex-direction: row;
+
   }
 
  

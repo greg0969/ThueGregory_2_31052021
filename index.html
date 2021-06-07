@@ -10,72 +10,73 @@
     <div class="flex-container">
         <header>
             <div  class="logo">
-                <h1 href="index.html">
-                    <img src="E:\Médias\Bureau\Formation\Projet 2\images\logo\Reservia@3x.png" alt="Logo reservia"/>
-                </h1>
+                <img src="E:\Médias\Bureau\Formation\Projet 2\images\logo\Reservia@3x.png" alt="Logo reservia"/>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#listehebergements">Hébergement</a></li>
-                    <li><a href="#listeactivites">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav> 
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#listehebergements">Hébergement</a></li>
+                        <li><a href="#listeactivites">Activités</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-inscription">
+                    <a href="#">S'inscrire</a>
+                </div>     
+            </div>
         </header>
-        <div class="recherche">
-            <h2><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h2>
+        <section class="recherche">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</strong></h2>
             <p>En plein centre ville ou en plein nature</p>
-            <span>
-                <i class="fas fa-map-marker-alt"></i>
-                <form> 
-                    <input type="text" name="text" class="search" placeholder="Rechercher">
-                    <input type="submit" name="Rechercher" class="submit" value="Rechercher">
+            <div class="champs-recherche">       
+                <form>
+                    <div class="searchbox">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <input type="text" name="text" class="search" placeholder="Rechercher" value="Marseille, France">
+                        <span>Rechercher</span>   
+                    </div>  
                 </form>
-            </span>
-        </div>
-        <div class="filtres">
-            <span>
+            </div>
+            <div class="champs-filtres">
                 Filtres
-                <a href=""><i class="fas fa-money-bill-wave"></i> Économique</a>
-                <a href=""><i class="fas fa-child"></i> Familial</a>
-                <a href=""><i class="fas fa-heart"></i> Romantique</a>
-                <a href=""><i class="fas fa-dog"></i> Animaux autorisés</a>
-                <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-            </span>
+                <div class="filtre"><i class="fas fa-money-bill-wave"></i> Économique</div>
+                <div class="filtre"><i class="fas fa-child"></i> Familial</div>
+                <div class="filtre"><i class="fas fa-heart"></i> Romantique</div>
+                <div class="filtre"></i> Animaux autorisés</div>
+            </div>
+            <div class="info"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
         </div>
         <div class="main">  
             <div id="listehebergements">
                 <section>
-                    <h2><strong>Hébergements à Marseille</strong></h2>
+                    <h2>Hébergements à Marseille</h2>
                     <div class="hebergements">
                         <div class="offres">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=""/>
-                            <h3><strong>Auberge la Cannebière</strong></h3>  
+                            <h3>Auberge la Cannebière</h3>  
                         </div>
                         <div class="offres">
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt=""/>
-                            <h3><strong>Hôtel du port</strong></h3>
+                            <h3>Hôtel du port</strong></h3>
                         </div>            
                         <div class="offres">
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt=""/>
-                            <h3><strong>Hôtel Les mouettes</strong></h3>
+                            <h3>Hôtel Les mouettes</strong></h3>
                         </div>                
                         <div class="offres">
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=""/>
-                            <h3><strong>Hôtel de la mer</strong></h3>
+                            <h3>Hôtel de la mer</strong></h3>
                         </div>
                         <div class="offres">
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=""/>
-                            <h3><strong>Auberge Le panier</strong></h3>
+                            <h3>Auberge Le panier</strong></h3>
                         </div>
                         <div class="offres">
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""/>
-                            <h3><strong>Hôtel chez Amina</strong></h3>
+                            <h3>Hôtel chez Amina</strong></h3>
                         </div>                           
                     </div>
                 </section>
                 <aside>
-                    <div class="populaires">
                         <div class="offres">
                             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""/>
                         </div>
@@ -84,8 +85,7 @@
                         </div>
                        <div class="offres">
                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""/>
-                       </div>
-                    </div>        
+                       </div>        
                 </aside>
                 <div id="listeactivites">
                     <div>

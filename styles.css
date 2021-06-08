@@ -210,7 +210,9 @@ i {
 
 #listehebergements { 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 
     /* HEBERGEMENTS */
@@ -226,7 +228,7 @@ i {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .liste-offres .offres {
@@ -236,7 +238,7 @@ i {
     margin-right: 15px;
 }
 
-figure { 
+.hebergements figure { 
     border-radius: 20px;
     margin: 15px;
     padding: 2%;
@@ -265,20 +267,77 @@ figure {
 
     /* POPULAIRES */
 
-aside {
-    
+.populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px 0px 30px 20px;
+    width: 70%;
 }
 
-aside .offres {
+.offre-populaire figure {
+    display: flex;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 1px 1px 10px 2px #c3c3c3;
+}
+
+.offre-populaire figure img {
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.offre-populaire figure figcaption {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
     width: 100%;
 }
 
+/* ACTIVITES */
 
-aside img { 
-    width: 70%;
-    justify-content: space-around;
+
+#listeactivites {
+    display: flex;
+    flex-direction: column;
+}
+
+#listeactivites div {
+    display: flex;
+    flex-direction: row;
+}
+
+#listeactivites div figure {
+    display: flex;
+    flex-direction: column;
+}
+
+#listeactivites div figcaption {
+    margin-left: 10px;
+}
+
+#listeactivites div img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.vieux-port img{
+    height: 500px;
 }
 
 
+ /* FOOTER */
 
- 
+ .footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-top: 20px;
+ }

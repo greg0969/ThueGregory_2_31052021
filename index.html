@@ -16,7 +16,7 @@
                 <nav>
                     <ul>
                         <li><a href="#listehebergements">Hébergement</a></li>
-                        <li><a href="#listeactivites">Activités</a></li>
+                        <li><a href="#listeactivites">activités</a></li>
                     </ul>
                 </nav>
                 <div class="nav-inscription">
@@ -136,15 +136,17 @@
                             </figure>
                         </a>                           
                     </div>
+                    <h3>Afficher plus</h3>
                 </section>
-                <aside>
+                <aside class="populaires">
+                    <h2>Les plus populaires</h2>
                     <div class="liste-offres">
-                        <a class="offres">
+                        <a class="offre-populaire">
                             <figure>
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""/>
                                 <figcaption>
-                                    <p class="titre">Auberge de la Cannebière</p>
-                                    <p>Nuit à partir de <strong>25€</strong></p>
+                                    <p class="titre">hôtel le soleil du matin</p>
+                                    <p>Nuit à partir de <strong>128€</strong></p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -153,26 +155,26 @@
                                 </figcaption>
                             </figure>
                         </a>
-                        <a class="offres">
+                        <a class="offre-populaire">
                             <figure>
                                 <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""/>
                             <figcaption>
-                                <p class="titre">Hôtel du port</p>
-                                <p>Nuit à partir de <strong>52€</strong></p>
+                                <p class="titre">Au coeur de l'eau Chambre d'Hôtes</p>
+                                <p>Nuit à partir de <strong>71€</strong></p>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" id="empty-star"></i>
                             </figcaption>
                             </figure>
                         </a>            
-                        <a class="offres">
+                        <a class="offre-populaire">
                             <figure>
                                 <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""/>
                                 <figcaption>
-                                    <p class="titre">Hôtel Les mouettes</p>
-                                    <p>Nuit à partir de <strong>76€</strong></p>
+                                    <p class="titre">Hôtel Tout bleu et Blanc</p>
+                                    <p>Nuit à partir de <strong>68€</strong></p>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
@@ -183,16 +185,70 @@
                         </a>                                           
                     </div>
                 </aside>
-                <div id="listeactivites">
-                    <div>
-        
-                    </div>
+            </div>
+            <div id="listeactivites">
+                <h2>Activités à Marseille</h2>
+                <div>
+                    <a class="activite">
+                        <figure class="vieux-port">
+                            <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Vieux port</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a class="activite">
+                        <figure>
+                            <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Fort de Pornègues</p>
+                            </figcaption>
+                            <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Îles du Frioul</p>
+                            </figcaption>
+                        </figure>
+                    </a>            
+                    <a class="activite">
+                        <figure class="parc-national">
+                            <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Parc National des Calanques</p>
+                            </figcaption>
+                        </figure>
+                    </a>                
+                    <a class="activite">
+                        <figure>
+                            <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Notre-Dame-de-la-Garde</p>
+                            </figcaption>
+                            <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""/>
+                            <figcaption>
+                                <p class="titre">Parc Longchamp</p>
+                            </figcaption>
+                        </figure>
+                    </a>        
                 </div>
-            </div>    
+            </div>   
         </main>
-        
         <div class="footer">
-            
+            <section>
+                <h3>A propos</h3>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de ventes</p>
+                <p>Données et confidentialité</p>
+            </section>
+            <section>
+                <h3>Nos hébergements</h3>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </section>
+            <section>
+                <h3>Assistance</h3>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </section>
         </div>          
     </div>
     

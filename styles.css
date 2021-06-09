@@ -210,9 +210,8 @@ i {
 
 #listehebergements { 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    max-height: 815px ;
 }
 
     /* HEBERGEMENTS */
@@ -222,20 +221,19 @@ i {
     border-radius: 20px;
     margin-right: 10px;
     padding: 20px 0px 30px 20px;
+    width: 62%;
 }
 
 .liste-offres {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 20px;
+    width: 98%;
 }
 
 .liste-offres .offres {
-    width: 30%;
+    width: 33%;
     min-width: 200px;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 .hebergements figure { 
@@ -270,11 +268,16 @@ i {
 .populaires {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px 0px 30px 20px;
-    width: 70%;
+    width: 470px;
+}
+
+.liste-offres-populaires {
+    display: flex;
+    flex-direction: column;
+ 
 }
 
 .offre-populaire figure {
@@ -282,22 +285,30 @@ i {
     background-color: white;
     min-width: 200px;
     box-shadow: 1px 1px 10px 2px #c3c3c3;
+    border-radius: 20px;
+    padding: 2%;
+    max-height: 160px;
 }
 
 .offre-populaire figure img {
-    width: 110px;
-    height: 130px;
+    width: 160px;
+    height: 163px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
+.offre-populaire .img3 img {
+    width: 160px;
+}
+
 .offre-populaire figure figcaption {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     margin-left: 20px;
-    width: 100%;
+    width: 200px;
 }
+
 
 /* ACTIVITES */
 

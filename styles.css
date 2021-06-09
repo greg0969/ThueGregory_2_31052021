@@ -148,6 +148,8 @@ input[type=button], input[type=submit], input[type=reset] {
     font-weight: bold;
     font-family: "Raleway-Medium";
     font-weight:600;
+    align-items: center;
+    width: 70%;
 }
 
 .champs-filtres a {
@@ -171,21 +173,23 @@ input[type=button], input[type=submit], input[type=reset] {
   }
 
 .filtre {
-    /*padding: 10px 35px 10px 0px;*/
-    width: 206px;
-    border: solid ;
+    padding: 0px 2% 0px 0px;
+    border: solid;
     border-width: medium;
     border-color: lightgrey;
     border-radius: 50px;
+    border-width: 2px;
+    border-left-style: none;
 }
 
 .filtre i {
     border: solid;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 21px;
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 15px 14px 15px 14px;
     margin-right: 10px;
+    color: #0065FC;
 }
 
 .info {
@@ -197,10 +201,15 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: "Font Awesome 5 Free";
     content: "\f129";
     display: inline-block;
-    padding-right: 20px;
+    margin-right: 20px;
     font-weight: 900;
     color: #0065FC;
-  }
+    border-radius: 21px;
+    border: #f2f2f2;
+    border-style: solid;
+    padding: 7px 13px 7px 13px;
+}
+  
 
 i {
       color: #0065FC;
@@ -271,8 +280,15 @@ i {
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px 0px 30px 20px;
-    width: 470px;
+    width: 505px;
 }
+
+.titre-populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .liste-offres-populaires {
     display: flex;
@@ -316,6 +332,15 @@ i {
 #listeactivites {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
+}
+
+#listeactivites div:nth-child(1) img{
+    min-height: 500px;
+}
+
+#listeactivites div:nth-child(3) img{
+    min-height: 500px;
 }
 
 #listeactivites div {
@@ -326,6 +351,9 @@ i {
 #listeactivites div figure {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 1px 10px 2px #c3c3c3;
+    border-radius: 20px;
 }
 
 #listeactivites div figcaption {
@@ -339,16 +367,18 @@ i {
     border-radius: 20px 20px 0 0;
 }
 
-.vieux-port img{
-    height: 500px;
-}
-
 
  /* FOOTER */
 
  .footer {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+     font-family: "Raleway-Medium";
      padding-top: 20px;
+     background-color: #f2f2f2;
  }
+
+ .footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+

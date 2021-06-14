@@ -1,8 +1,8 @@
 /*ajout police d'ecriture*/
 
 @font-face {
-    font-family: "Raleway-Regular";
-    src: url("fonts/Raleway-Regular.ttf");
+    font-family: "Raleway-Bold";
+    src: url("fonts/Raleway-Bold.ttf");
 }
 
 @font-face {
@@ -12,14 +12,23 @@
 
 /* page entiere */
 
+body {
+    margin: auto;
+}
+
 .flex-container { 
     font-family: "Raleway-Medium";
     width: 90%;
     margin: auto;
 }
 
+.flex-container a:visited {
+    color: black;
+}
+
 h2 {
     font-size: 20px;
+    font-family: "Raleway-Bold";
 }
 
 p {
@@ -171,7 +180,6 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     border-radius: 50%;
     border-color: #DEEBFF;
-    border: 10%;
     border-style: solid;
 }
 
@@ -228,7 +236,7 @@ i {
 #listehebergements { 
     display: flex;
     justify-content: space-between;
-    max-height: 815px ;
+    /*max-height: 815px ;*/
 }
 
     /* HEBERGEMENTS */
@@ -261,7 +269,7 @@ i {
 }
 
 .liste-offres .offres {
-    width: 33%;
+    width: 340px;
     min-width: 200px;
 }
 
@@ -273,7 +281,7 @@ i {
 
 .offres figure {
     background-color: white;
-    min-width: 200px;
+    min-width: 256px;
     box-shadow: 1px 1px 10px 2px #c3c3c3;
 }
 
@@ -289,7 +297,7 @@ i {
     font-size: 20px;
 }
 
-#empty-star {
+.empty-star i {
     color: lightgrey;
 }
 
@@ -324,7 +332,7 @@ i {
 }
 
 .offre-populaire {
-    width: 100%;
+    width: 500px;
 }
 
 .offre-populaire figcaption p:first-child {
@@ -377,6 +385,7 @@ i {
 
 #listeactivites figure {
     width: 90%;
+    margin: auto;
 }
 
 #listeactivites a {
@@ -387,7 +396,7 @@ i {
 }
 
 #listeactivites h2 {
-    padding-left: 35px;
+    padding-left: 15px;
 }
 
 #listeactivites div:nth-child(1) img{
@@ -403,6 +412,7 @@ i {
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
 }
 
 #listeactivites div figure {
@@ -411,6 +421,12 @@ i {
     background-color: white;
     box-shadow: 1px 1px 10px 2px #c3c3c3;
     border-radius: 20px;
+    margin-top: 35px;
+    
+}
+
+#listeactivites .liste-activites div {
+    width: 120em;
 }
 
 #listeactivites div figcaption {
@@ -432,7 +448,6 @@ i {
     height: 500px;
     width: 100%;
 }
-
 
 .activite-2 img {
     height: 240px;
@@ -462,7 +477,6 @@ i {
     width: 100%;
 }
 
-
  /* FOOTER */
 
  .footer {
@@ -474,6 +488,162 @@ i {
  .footer div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
  }
 
+ .footer div section:first-child {
+     margin-left: 7em;
+ }
+
+ .footer div section:last-child {
+     margin-right: 28em;
+ }
+
+ /* MEDIA QUERIES */
+
+ @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+     
+    body {
+        width: 100%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 73em;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo img{
+        width: 20em;
+        object-fit: scale-down;
+        align-self: start;
+    }
+
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        font-size: 4em;
+    }
+    
+    header .nav-inscription {
+      
+    }
+
+    #listehebergements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre-populaire h2 {
+        font-size: 4em;
+    }
+
+    .populaires {
+        width: 100%;
+        order: 1;
+    }
+
+    .populaire .titre-populaire {
+        width: 100%;
+    }
+
+    .populaires .offre-populaire {
+        width: 100%;
+    }
+
+
+    .populaires .offre-populaire img {
+        width: 30%;
+    }
+
+    .populaires .offre-populaire figcaption {
+        width: 70%;
+    }
+
+    .populaires .offre-populaire figcaption p {
+        font-size: 40%;
+    }
+
+    .hebergements {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        width: 67em;
+        background-color: white;
+    }
+
+    .hebergements h2 {
+        font-size: 5em;
+    }
+
+    .hebergements .liste-offres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements .liste-offres a {
+        width: 100%;
+        height: 60em;
+    }
+
+    .hebergements .liste-offres figure {
+        width: 100%;
+        height: 55em;
+    }
+
+    .hebergements .liste-offres a img {
+        width: 100%;
+        height: 28em;
+    }
+
+    .hebergements .liste-offres a figcaption {
+        margin: 40px 0 0 40px;
+    }
+
+    .hebergements .liste-offres a figcaption p {
+        font-size: 4em;
+    }
+
+    .hebergements .liste-offres a figcaption i{
+        font-size: 4em;
+    }
+
+
+    .footer {
+        width: 80em;
+    }
+
+    .footer div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .footer div section {
+       margin-left: 70px;
+    }
+
+    .footer div section:first-child {
+        margin: 70px;
+    }
+
+    .footer div section:last-child {
+        margin-bottom: 28px;
+    }
+
+    .footer div section h2 {
+        font-size: 4em;
+    }
+
+    .footer div section p {
+        font-size: 4em;
+    }
+
+ }

@@ -433,6 +433,8 @@ i {
 
 #listeactivites .liste-activites div {
     width: 120em;
+    display: flex;
+    flex-direction: column;
 }
 
 #listeactivites div figcaption {
@@ -628,9 +630,10 @@ i {
         font-weight: 900;
         background-color: #0065FC;
         color: white;
-        padding: 4%;
-        border-radius: 2em;
+        padding: 4% 3% 7% 5%;
+        border-radius: 1em;
         width: 5em;
+        font-size: 3em;
     }
 
     .champs-recherche form i  {

@@ -558,12 +558,17 @@ i {
         order: 2;
     }
 
+    .menu ul li a {
+        margin-left: 3em;
+    }
 
     li {
-        margin-right: 3em;
+        margin-right: 0em;
         border-bottom-style: solid;
         border-color: #c3c3c3;
         border-width: 10px;
+        width: 11em;
+    }
     }
 
     li:hover {

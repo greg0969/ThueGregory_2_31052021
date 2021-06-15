@@ -63,7 +63,7 @@ nav ul {
 }
 
 li a {
-    padding: 43px 50px 43px 50px ;
+    padding: 37px 50px 43px 50px ;
     color: black;
 }
 
@@ -118,7 +118,7 @@ form i {
     clear: both ;
     border-radius: 15px 0 0 15px;
     padding: 0.8em;
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
 }
 
 .searchbox span {
@@ -173,6 +173,11 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 70%;
 }
 
+.champs-filtres p {
+    align-self: flex-end;
+    font-size: 20px;
+}
+
 .champs-filtres a {
     margin: 78px;
     font-style: normal;
@@ -189,7 +194,7 @@ input[type=button], input[type=submit], input[type=reset] {
     border: solid;
     border-width: medium;
     border-color: lightgrey;
-    border-radius: 50px;
+    border-radius: 2em;
     border-width: 2px;
     border-left-style: none;
 }
@@ -236,7 +241,7 @@ i {
 #listehebergements { 
     display: flex;
     justify-content: space-between;
-    /*max-height: 815px ;*/
+    max-height: 715px ;
 }
 
     /* HEBERGEMENTS */
@@ -350,18 +355,18 @@ i {
     box-shadow: 1px 1px 10px 2px #c3c3c3;
     border-radius: 20px;
     padding: 6px;
-    max-height: 160px;
+    height: 150px;
 }
 
 .offre-populaire figure img {
     width: 140px;
-    height: 160px;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
 
 .offre-populaire .img3 img {
-    width: 160px;
+    width: 140px;
 }
 
 .offre-populaire figure figcaption {
@@ -536,18 +541,166 @@ i {
       
     }
 
+    .recherche {
+        width: 80em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .recherche h1 {
+        width: 15em;
+        font-size: 4em;
+        margin-left: 1em;
+    }
+
+    .recherche .titre-site p {
+        width: 18em;
+        font-size: 3em;
+        margin-left: 73px;
+    }
+
+    .recherche .titre-site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .champs-recherche {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .champs-recherche form {
+        width: 80em;
+    }
+
+    .champs-recherche form .searchbox {
+        display: flex;
+        width: 75em;
+        height: 9em;
+        margin-left: 4em;
+        border: #f2f2f2;
+        border-style: solid none solid none;
+        border-width: 5px;
+        border-radius: 2em;
+    }
+
+    .champs-recherche form .searchbox i {
+        border-radius: 20px 0 0 20px;
+    }
+
+    .champs-recherche form .searchbox::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f002";
+        display: inline-block;
+        font-weight: 900;
+        background-color: #0065FC;
+        color: white;
+        padding: 4%;
+        border-radius: 2em;
+        width: 5em;
+        size: 5x;
+    }
+
+    .champs-recherche form i  {
+        font-size: 3em;
+        padding: 4%;
+    }
+
+    .champs-recherche form .search {
+        display: flex;
+        font-size: 4em;
+        width: 50em;
+        margin-left: 30px;
+    }
+
+    .champs-recherche form span  {
+        display: none;
+    }
+
+    .champs-filtres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 20em;
+        font-size: 4em;
+        max-height: 11em;
+        align-items: baseline;
+        padding: 70px 0 20px 74px;
+    }
+
+    .champs-filtres p {
+        font-size: 1em;
+        align-self: start;
+    }
+
+    .filtre {
+        display: flex;
+        height: 2em;
+        margin-bottom: 50px;
+        align-items: center;
+        border: #f2f2f2;
+        border-left-style: none;
+        border-style: solid solid solid none;
+        border-width: 7px;
+    }
+
+    .filtre i {
+        padding: 38px;
+        border-radius: 2em;
+    }
+
+    .recherche .info p {
+        font-size: 3em;
+        margin-left: 3em;
+        margin-right: 2em;
+    }
+
+    .info p::before {
+        margin-right: 45px;
+    }    
+
+    #familial {
+        order: 4;
+        margin-top: 2em;
+    }
+
+    #animaux {
+        order: 3;
+    }
+
+    #romantique {
+        order: 2;
+    }
+
     #listehebergements {
         display: flex;
         flex-direction: column;
+        max-height: none;
+    }
+
+    .titre-populaire {
+        align-items: baseline;
     }
 
     .titre-populaire h2 {
         font-size: 4em;
     }
 
+    .titre-populaire i {
+        font-size: 4em;
+    }
+
     .populaires {
-        width: 100%;
+        width: 82em;
         order: 1;
+        height: 125em;
+    }
+
+    .liste-offres a figure {
+        height: inherit;
+        border-radius: 60px;
+        padding: 1em;
     }
 
     .populaire .titre-populaire {
@@ -555,28 +708,37 @@ i {
     }
 
     .populaires .offre-populaire {
-        width: 100%;
+        width: 80em;
+        height: 30em;
     }
 
+    .liste-offres-populaires .liste-offres {
+        height: 115em;
+    }
 
     .populaires .offre-populaire img {
-        width: 30%;
+        width: 37%;
+        height: 30em;
+        border-radius: 60px 0 0 60px;
     }
 
     .populaires .offre-populaire figcaption {
-        width: 70%;
+        width: 63%;
+        height: 30em;
+        margin-left: 4em;
     }
 
     .populaires .offre-populaire figcaption p {
-        font-size: 40%;
+        font-size: 60px;
     }
 
     .hebergements {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 67em;
+        width: 80em;
         background-color: white;
+        height: 385em;
     }
 
     .hebergements h2 {
@@ -585,22 +747,23 @@ i {
 
     .hebergements .liste-offres {
         display: flex;
-        flex-direction: column;
+        
     }
 
     .hebergements .liste-offres a {
-        width: 100%;
-        height: 60em;
+        width: 75em;
+        height: 53em;
     }
 
     .hebergements .liste-offres figure {
         width: 100%;
-        height: 55em;
+        height: 48em;
     }
 
     .hebergements .liste-offres a img {
         width: 100%;
         height: 28em;
+        border-radius: 60px;
     }
 
     .hebergements .liste-offres a figcaption {
@@ -608,7 +771,7 @@ i {
     }
 
     .hebergements .liste-offres a figcaption p {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .hebergements .liste-offres a figcaption i{

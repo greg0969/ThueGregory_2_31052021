@@ -72,7 +72,7 @@ a {
     
 }
 
-a:hover {
+.menu a:hover {
     color: #0065FC;
 }
 
@@ -90,6 +90,7 @@ li a:hover {
 .nav-inscription {
     color: #0065FC;
     padding-left: 50px;
+    font-weight: bold;
 }
 
 /*MAIN*/

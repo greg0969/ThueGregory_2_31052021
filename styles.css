@@ -738,11 +738,12 @@ i {
         flex-direction: column;
         width: 80em;
         background-color: white;
-        height: 385em;
+        height: 345em;
     }
 
     .hebergements h2 {
         font-size: 5em;
+        margin-left: 55px;
     }
 
     .hebergements .liste-offres {
@@ -778,9 +779,53 @@ i {
         font-size: 4em;
     }
 
+    #listeactivites {
+        width: 83em;
+        height: 283em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #listeactivites h2 {
+        font-size: 5em;
+        margin-left: 55px;
+    }
+
+    #listeactivites div {
+        display: flex;
+        flex-direction:column ;
+        height: 260em;
+    }
+
+    #listeactivites .liste-activites div {
+        height: 200em;
+    }
+
+    #listeactivites .liste-activites div {
+        width: 100%;
+    }
+
+    #listeactivites div a {
+        width: 100%;
+    }
+
+    #listeactivites div figure {
+        height: 40em;
+        border-radius: 60px;
+    }
+
+    #listeactivites div figure figcaption p {
+        font-size: 4em;
+    }
+
+    #listeactivites div img {
+        height: 28em;
+        border-radius: 60px 60px 0 0;
+    }
+
 
     .footer {
-        width: 80em;
+        width: 84em;
     }
 
     .footer div {

@@ -216,6 +216,27 @@ input[type=button], input[type=submit], input[type=reset] {
     padding: 15px 14px 15px 14px;
     margin-right: 10px;
     color: #0065FC;
+    border-left-style: none;
+}
+
+#familial i {
+    border: solid;
+    border-style: none;
+    border-radius: 60px;
+    background-color: #DEEBFF;
+    padding: 15px 17px 15px 18px;
+    margin-right: 10px;
+    border-left-style: none;
+}
+
+#romantique i {
+    border: solid;
+    border-style: none;
+    border-radius: 60px;
+    background-color: #DEEBFF;
+    padding: 16px 16px 15px 17px;
+    margin-right: 10px;
+    border-left-style: none;
 }
 
 .filtre:hover {
@@ -538,10 +559,8 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
- }
-
- .footer div section:first-child {
-     margin-left: 7em;
+    max-width: 1440px;
+    margin: auto;
  }
 
  .footer div section:last-child {

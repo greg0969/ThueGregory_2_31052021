@@ -276,7 +276,6 @@ i {
 #listehebergements { 
     display: flex;
     justify-content: space-between;
-    height: 38em ;
     width: 100%;
 }
 
@@ -301,6 +300,7 @@ i {
     border-radius: 20px;
     margin-right: 50px;
     width: 65%;
+    padding-bottom: 40px;
 }
 
 .hebergements h2 {

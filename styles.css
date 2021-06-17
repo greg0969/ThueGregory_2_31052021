@@ -276,7 +276,7 @@ i {
 #listehebergements { 
     display: flex;
     justify-content: space-between;
-    height: 40em ;
+    height: 38em ;
     width: 100%;
 }
 
@@ -305,7 +305,7 @@ i {
 
 .hebergements h2 {
     margin-left: 3%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .hebergements h2:first-child {
@@ -421,6 +421,10 @@ i {
     padding: 6px;
     height: 150px;
     margin: 10px 0 25px 35px;
+}
+
+.offre-populaire .img3 {
+    margin-bottom: 20px;
 }
 
 .offre-populaire figure img {

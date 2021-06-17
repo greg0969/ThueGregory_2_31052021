@@ -725,9 +725,8 @@ i {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 20em;
         font-size: 4em;
-        max-height: 11em;
+        max-height: 12em;
         align-items: baseline;
         padding: 70px 0 20px 74px;
     }
@@ -763,12 +762,32 @@ i {
         margin-top: 2em;
     }
 
+    #familial i {
+        border: solid;
+        border-style: none;
+        border-radius: 66px;
+        background-color: #DEEBFF;
+        padding: 38px 48px 38px 48px;
+        margin-right: 10px;
+        border-left-style: none;
+    }
+
     #animaux {
         order: 3;
     }
 
     #romantique {
         order: 2;
+    }
+
+    #romantique i {
+        border: solid;
+        border-style: none;
+        border-radius: 66px;
+        background-color: #DEEBFF;
+        padding: 38px 42px 38px 42px;
+        margin-right: 10px;
+        border-left-style: none;
     }
 
     .info .fa-info {

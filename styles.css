@@ -767,7 +767,7 @@ i {
         border-style: none;
         border-radius: 66px;
         background-color: #DEEBFF;
-        padding: 38px 48px 38px 48px;
+        padding: 38px 44px 38px 48px;
         margin-right: 10px;
         border-left-style: none;
     }
@@ -785,7 +785,7 @@ i {
         border-style: none;
         border-radius: 66px;
         background-color: #DEEBFF;
-        padding: 38px 42px 38px 42px;
+        padding: 38px;
         margin-right: 10px;
         border-left-style: none;
     }
@@ -895,7 +895,7 @@ i {
 
     .hebergements h2 {
         font-size: 5em;
-        margin-left: 95px;
+        margin-left: 80px;
     }
 
     .hebergements .liste-offres {
@@ -907,7 +907,7 @@ i {
     }
 
     .hebergements .liste-offres a {
-        width: 75em;
+        width: 100%;
         height: 53em;
     }
 
@@ -992,7 +992,7 @@ i {
     .footer div {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 98%;
     }
 
     .footer div section {

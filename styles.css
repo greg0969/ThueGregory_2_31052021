@@ -337,7 +337,7 @@ i {
     box-shadow: 1px 1px 10px 2px #c3c3c3;
     width: 100%;
     margin: 0;
-    height: 12em;
+    /*height: 12em*/;
 }
 
 .offres figure img {

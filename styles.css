@@ -14,11 +14,12 @@
 
 body {
     margin: auto;
+    overflow-x: hidden;
 }
 
 .flex-container { 
     font-family: "Raleway-Medium";
-    /*width: 95%;*/
+    width: 95%;
     margin: auto;
     max-width: 1440px;
 }
@@ -184,6 +185,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-weight:600;
     align-items: center;
     margin-right: 24em;
+    width: 68%;
 }
 
 .champs-filtres p {
@@ -210,6 +212,9 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 2em;
     border-width: 2px;
     border-left-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .filtre i {
@@ -249,7 +254,6 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .info {
     padding-top: 1em;
-    padding-left: 10px;
     display: flex;
     flex-direction: row;
 }
@@ -355,7 +359,7 @@ i {
 
 .titre {
     font-weight: bold;
-    font-size: 95%;
+    font-size: 80%;
     margin-top: 10px;
 }
 
@@ -457,8 +461,9 @@ i {
 #listeactivites {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    align-content: flex-start;
 }
 
 #listeactivites figure {
@@ -499,18 +504,20 @@ i {
     background-color: white;
     box-shadow: 1px 1px 10px 2px #c3c3c3;
     border-radius: 20px;
-    margin-top: 35px;
+    margin-top: 55px;
+    margin-bottom: 1%;
     
 }
 
 #listeactivites .liste-activites div {
-    width: 120em;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 #listeactivites div figcaption {
     margin-left: 20px;
+    padding-top: 2%;
 }
 
 #listeactivites div img {
@@ -520,40 +527,33 @@ i {
 
 
 .port img {
-    height: 500px;
+    height: 425px;
     width: 100%;
 }
 
 .parc-national img {
-    height: 500px;
+    height: 425px;
     width: 100%;
 }
 
 .activite-2 img {
-    height: 240px;
+    height: 195px;
     width: 100%;
 }
 
-.activite-2 {
-    height: 295px;
-}
 
 .activite-3 img {
-    height: 165px;
+    height: 125px;
     width: 100%;
-}
-
-.activite-3 {
-    height: 217px;
 }
 
 .activite-5 img {
-    height: 200px;
+    height: 133px;
     width: 100%;
 }
 
 .activite-6 img {
-    height: 217px;
+    height: 180px;
     width: 100%;
 }
 
@@ -568,13 +568,14 @@ i {
  .footer div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1440px;
     margin: auto;
+    margin-left: -5%;
  }
 
  .footer div section:last-child {
-     margin-right: 28em;
+     
  }
 
  /* MEDIA QUERIES */
@@ -583,12 +584,14 @@ i {
      
     body {
         width: 100%;
+        overflow-x:hidden
     }
 
     .flex-container {
         display: flex;
         flex-direction: column;;
     }
+
 
     header {
         display: flex;
@@ -611,6 +614,7 @@ i {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
+        width: 100%;
     }
     
     header .nav-inscription {
@@ -625,6 +629,7 @@ i {
 
     header nav {
         order: 2;
+        width: 100%;
     }
 
 
@@ -633,10 +638,12 @@ i {
         border-bottom-style: solid;
         border-color: #c3c3c3;
         border-width: 3px;
+        width: 50%;
     }
 
     nav ul {
         padding: 0;
+        width: 100%;
     }
     
 
@@ -653,6 +660,7 @@ i {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 0 4% 0 4%;
     }
 
 
@@ -685,12 +693,11 @@ i {
 
     .champs-recherche form .searchbox {
         display: flex;
-        margin-left: 2em;
         border: #f2f2f2;
         border-style: solid none solid none;
         border-width: 1px;
         border-radius: 2em;
-        width: 80%;
+        width: 100%;
     }
 
     .champs-recherche form .searchbox i {
@@ -733,9 +740,9 @@ i {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-height: 19em;
+        max-height: 25em;
         align-items: baseline;
-        padding: 70px 0 20px 20px;
+        padding: 70px 0 0 0;
         width: 100%;
     }
 
@@ -746,12 +753,15 @@ i {
 
     .filtre {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         align-items: center;
         border: #f2f2f2;
         border-left-style: none;
         border-style: solid solid solid none;
         border-width: 2px;
+        width: auto;
+        /* margin-right: 11px; */
+        padding-right: 5%;
     }
 
     .filtre i {
@@ -764,7 +774,7 @@ i {
 
     #familial {
         order: 4;
-        margin-top: 2em;
+        margin: -186px 0 150px 195px;
     }
 
     #familial i {
@@ -795,7 +805,7 @@ i {
 
     .info {
         width: 100%;
-        margin-left: 20px;
+        padding: 0;
     }
 
     .info .fa-info {
@@ -816,8 +826,8 @@ i {
 
     .titre-populaire {
         align-items: baseline;
-        width: 85%;
-        padding: 3px 12% 5px 7%;
+        width: 90%;
+        padding: 3px 0 5px 5%;
     }
 
     .populaires {
@@ -926,10 +936,6 @@ i {
         flex-direction: column;
     }
 
-    #listeactivites h2 {
-        margin-left: 55px;
-    }
-
     #listeactivites div {
         display: flex;
         flex-direction:column ;
@@ -951,7 +957,8 @@ i {
         display: flex;
         flex-direction: column;
         border-radius: 20px;
-        box-shadow:  11px 7px 20px 9px #c3c3c3;
+        box-shadow: 1px 2px 4px 2px #c3c3c3;
+        margin-top: 10px;
     }
 
     .activite-2 {

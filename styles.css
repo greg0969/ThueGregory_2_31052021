@@ -572,6 +572,13 @@ i {
     max-width: 1440px;
     margin: auto;
     margin-left: -5%;
+    width: 95%;
+    margin: auto;
+    max-width: 1440px;
+ }
+
+ .footer div section {
+     margin-right: auto;
  }
 
 

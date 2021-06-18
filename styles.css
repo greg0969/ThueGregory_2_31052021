@@ -130,13 +130,17 @@ form i {
     background-color: #f2f2f2;
 }
 
-.searchbox span {
+.searchbox .bouton-recherche {
     background-color: #0065FC;
     color: white;
     padding: 15px 20px 15px 20px;
     font-weight: 300;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.fa-search {
+    display: none;
 }
 
 input[type=text] {
@@ -179,7 +183,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: "Raleway-Medium";
     font-weight:600;
     align-items: center;
-    width: 70%;
+    margin-right: 24em;
 }
 
 .champs-filtres p {
@@ -583,40 +587,35 @@ i {
 
     .flex-container {
         display: flex;
-        flex-direction: column;
-        width: 73em;
+        flex-direction: column;;
     }
 
     header {
-        width: 83em;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .logo img{
-        width: 20em;
         object-fit: scale-down;
         align-self: start;
+        margin-left: 20px;
+        width: 25%;
     }
 
     header .logo {
         display: flex;
-        width: 0;
-        margin-left: 80px;
     }
 
     header .menu {
-        font-size: 4em;
         display: flex;
         flex-direction: row-reverse;
-        width: 15em;
         flex-wrap: wrap;
     }
     
     header .nav-inscription {
         order: 1;
-        margin: 50px 80px 0 0;
+        margin: -40px 60px 0 0;
         font-weight: bold;
     }
     
@@ -628,16 +627,16 @@ i {
         order: 2;
     }
 
-    .menu ul li a {
-        margin-left: 3em;
-    }
 
     li {
         margin-right: 0em;
         border-bottom-style: solid;
         border-color: #c3c3c3;
-        border-width: 10px;
-        width: 11em;
+        border-width: 3px;
+    }
+
+    nav ul {
+        padding: 0;
     }
     
 
@@ -651,90 +650,93 @@ i {
     }
 
     .recherche {
-        width: 80em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .recherche h1 {
-        width: 15em;
-        font-size: 4em;
-        margin-left: 1em;
-    }
-
-    .recherche .titre-site p {
-        width: 18em;
-        font-size: 3em;
-        margin-left: 73px;
-    }
 
     .recherche .titre-site {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 5%;
     }
 
+    h1 {
+        width: 94%;
+        font-size: 22px;
+    }
+
+    .titre-site p {
+        font-size: small;
+    }
+    
     .champs-recherche {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .champs-recherche form {
-        width: 80em;
+        width: 100%;
     }
 
     .champs-recherche form .searchbox {
         display: flex;
-        width: 75em;
-        height: 9em;
-        margin-left: 4em;
+        margin-left: 2em;
         border: #f2f2f2;
         border-style: solid none solid none;
-        border-width: 5px;
+        border-width: 1px;
         border-radius: 2em;
+        width: 80%;
     }
 
     .champs-recherche form .searchbox i {
-        border-radius: 20px 0 0 20px;
+        border-radius: 30% 0 0 30%;
+        width: 13%;
+        text-align: center;
     }
 
-    .champs-recherche form .searchbox::after {
-        font-family: "Font Awesome 5 Free";
-        content: "\f002";
+    .champs-recherche form .fa-search {
         display: inline-block;
         font-weight: 900;
         background-color: #0065FC;
         color: white;
-        padding: 4% 3% 7% 5%;
+        padding: 6%;
         border-radius: 1em;
-        width: 5em;
-        font-size: 3em;
     }
 
     .champs-recherche form i  {
-        font-size: 3em;
-        padding: 4%;
+        padding: 6% 4% 4% 4%;;
     }
 
     .champs-recherche form .search {
         display: flex;
-        font-size: 4em;
-        width: 50em;
-        margin-left: 30px;
+        margin-left: 15px;
+        width:100%;
     }
 
-    .champs-recherche form span  {
+    .champs-recherche form .bouton-recherche {
         display: none;
+    }
+
+    .searchbox span {
+    background-color: #0065FC;
+    color: white;
+    padding: 17px;
+    border-radius: 23%;
     }
 
     .champs-filtres {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font-size: 4em;
-        max-height: 12em;
+        max-height: 19em;
         align-items: baseline;
-        padding: 70px 0 20px 74px;
+        padding: 70px 0 20px 20px;
+        width: 100%;
     }
 
     .champs-filtres p {
@@ -744,23 +746,20 @@ i {
 
     .filtre {
         display: flex;
-        height: 2em;
         margin-bottom: 50px;
         align-items: center;
         border: #f2f2f2;
         border-left-style: none;
         border-style: solid solid solid none;
-        border-width: 7px;
+        border-width: 2px;
     }
 
     .filtre i {
-        padding: 38px;
         border-radius: 2em;
     }
 
     .recherche .info p {
-        font-size: 3em;
-        margin-right: 2em;
+        font-size: 90%;
     } 
 
     #familial {
@@ -773,7 +772,6 @@ i {
         border-style: none;
         border-radius: 66px;
         background-color: #DEEBFF;
-        padding: 38px 44px 38px 48px;
         margin-right: 10px;
         border-left-style: none;
     }
@@ -791,20 +789,22 @@ i {
         border-style: none;
         border-radius: 66px;
         background-color: #DEEBFF;
-        padding: 38px;
         margin-right: 10px;
         border-left-style: none;
     }
 
+    .info {
+        width: 100%;
+        margin-left: 20px;
+    }
+
     .info .fa-info {
-        margin: 0 35px 92px 80px;
         border-radius: 60px;
         border: #c3c3c3;
         border-style: solid;
-        border-width: 2px;
-        padding: 20px 35px 20px 35px;
-        font-size: 3em;
+        border-width: 1px;
         align-self: flex-start;
+        margin-bottom: 30px;
     }
 
 
@@ -812,49 +812,43 @@ i {
         display: flex;
         flex-direction: column;
         max-height: none;
-        height: 475em;
     }
 
     .titre-populaire {
         align-items: baseline;
-        margin-left: 45px;
-        padding-right: 80px;
-    }
-
-    .titre-populaire h2 {
-        font-size: 4em;
-    }
-
-    .titre-populaire i {
-        font-size: 4em;
+        width: 85%;
+        padding: 3px 12% 5px 7%;
     }
 
     .populaires {
-        width: 83em;
         order: 1;
-        height: 125em;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .liste-offres-populaires {
+        margin-left: 3%;
     }
 
     .offre-populaire figure  {
-        height: 30em;
-        width: 90%;
-        margin: 0 0em 0 4em;
-        padding: 20px;
-        border-radius: 60px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 20px;
     }
 
     .liste-offres a figure {
         height: inherit;
-        border-radius: 60px;
-        padding: 1em;
+        border-radius: 20px;
+        padding: 2%;
     }
 
     .offres figure {
-        box-shadow:  11px 7px 20px 9px #c3c3c3;
+        box-shadow:  1px 2px 4px 2px #c3c3c3;
     }
 
     .offre-populaire figure {
-        box-shadow:  11px 7px 20px 9px #c3c3c3;
+        box-shadow:  6px 3px 10px 6px #c3c3c3;
+        margin: 0;
     }
 
     .populaire .titre-populaire {
@@ -862,8 +856,8 @@ i {
     }
 
     .populaires .offre-populaire {
-        width: 80em;
-        height: 35em;
+        width: 90%;
+        height: 10em;
     }
 
     .liste-offres-populaires .liste-offres {
@@ -872,8 +866,7 @@ i {
 
     .populaires .offre-populaire  figure img {
         width: 37%;
-        height: 30em;
-        border-radius: 60px 0 0 60px;
+        border-radius: 20px 0 0 20px;
     }
 
     .populaires .offre-populaire .img3 img {
@@ -882,85 +875,68 @@ i {
 
     .populaires .offre-populaire figcaption {
         width: 63%;
-        height: 30em;
-        margin-left: 4em;
     }
 
     .populaires .offre-populaire figcaption p {
-        font-size: 60px;
     }
 
     .hebergements {
         order: 2;
         display: flex;
         flex-direction: column;
-        width: 80em;
+        width: 100%;
         background-color: white;
-        height: 345em;
     }
 
     .hebergements h2 {
-        font-size: 5em;
-        margin-left: 80px;
+        margin-left: 3%;
     }
 
     .hebergements .liste-offres {
         display: flex;
-        height: 320em;
-        width: 90%;
-        margin-left: 6%;
-        margin-top: 105px;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 3%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: auto;
     }
 
     .hebergements .liste-offres a {
-        width: 100%;
-        height: 53em;
+        width: 90%;
     }
 
     .hebergements .liste-offres figure {
-        width: 100%;
-        height: 46em;
+        width: 99%;
     }
 
     .hebergements .liste-offres a img {
         width: 100%;
-        height: 28em;
-        border-radius: 60px 60px 0 0;
+        border-radius: 20px 20px 0 0;
     }
 
     .hebergements .liste-offres a figcaption {
-        margin: 40px 0 0 40px;
-    }
-
-    .hebergements .liste-offres a figcaption p {
-        font-size: 3em;
-        margin-bottom: 30px;
-    }
-
-    .hebergements .liste-offres a figcaption i{
-        font-size: 3em;
+        margin: 0 0 0 5%;
     }
 
     #listeactivites {
-        width: 83em;
-        height: 283em;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     #listeactivites h2 {
-        font-size: 5em;
         margin-left: 55px;
     }
 
     #listeactivites div {
         display: flex;
         flex-direction:column ;
-        height: 260em;
     }
 
     #listeactivites .liste-activites div {
-        height: 200em;
+        
     }
 
     #listeactivites .liste-activites div {
@@ -972,53 +948,47 @@ i {
     }
 
     #listeactivites div figure {
-        height: 40em;
-        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
         box-shadow:  11px 7px 20px 9px #c3c3c3;
     }
 
-    #listeactivites div figure figcaption p {
-        font-size: 4em;
-        margin: 50px 0 0 45px;
+    .activite-2 {
+        height: auto;
+    }
+
+    .activite-3 {
+        height: auto;
+    }
+
+    .activite-5 {
+        height: auto;
+    }
+
+    .activite-6 {
+        height: auto;
     }
 
     #listeactivites div img {
-        height: 28em;
-        border-radius: 60px 60px 0 0;
-    }
-
-    .activite {
-        margin-bottom: 3em;
+        border-radius: 20px 20px 0 0;
+        height: 8em;
     }
 
     .footer {
-        width: 84em;
+        width: 100%;
     }
 
     .footer div {
         display: flex;
         flex-direction: column;
         width: 98%;
-    }
-
-    .footer div section {
-       margin-left: 70px;
-    }
-
-    .footer div section:first-child {
-        margin: 70px;
+        margin-left: 5%;
     }
 
     .footer div section:last-child {
         margin-bottom: 28px;
-    }
-
-    .footer div section h2 {
-        font-size: 4em;
-    }
-
-    .footer div section p {
-        font-size: 4em;
+        margin-right: 0;
     }
 
  }

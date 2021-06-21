@@ -352,8 +352,8 @@ i {
     box-shadow: 1px 1px 10px 2px #c3c3c3;
     width: 100%;
     margin: 0;
-    margin-bottom: 25px
-    /*height: 12em*/;
+    margin-bottom: 25px;
+    height: 12em;
 }
 
 .offres figure img {
@@ -1012,14 +1012,22 @@ i {
 
  }
 
- @media screen and (min-width: 768px) and (max-width: 1024px) {
+ @media screen and (min-width: 768px) and (max-width: 1160px) {
      
     .flex-container {
         width: 90%;
     }
 
+    header .logo {
+        width: 25%;
+    }
+
      .logo img {
          width: 100% !important;
+     }
+
+     li a {
+        padding-left: 20px;
      }
 
      .champs-filtres {

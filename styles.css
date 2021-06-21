@@ -548,7 +548,7 @@ i {
 }
 
 .activite-5 img {
-    height: 133px;
+    height: 140px;
     width: 100%;
 }
 
@@ -583,6 +583,7 @@ i {
 
 
  /* MEDIA QUERIES */
+
 
  @media screen and (max-width: 767px), (min-width: 768px) and (max-width: 1024px) {
      
@@ -629,11 +630,12 @@ i {
     
     header .nav-inscription a {
         color: #0065FC;
+        margin-left: 56%;
     }
 
     header nav {
         order: 2;
-        width: 100%;
+        width: 105%;
     }
 
 
@@ -647,7 +649,7 @@ i {
 
     nav ul {
         padding: 0;
-        width: 100%;
+        width: 105%;
     }
     
 
@@ -768,17 +770,23 @@ i {
         padding-right: 5%;
     }
 
+    .recherche .filtre p {
+        font-size: 85%;
+        margin-top: 0;
+        align-self: flex-end;
+    }
+
     .filtre i {
-        border-radius: 2em;
+        padding: 13px 12px 13px 12px;
     }
 
     .recherche .info p {
-        font-size: 90%;
+        font-size: 86%;
     } 
 
     #familial {
         order: 4;
-        margin: -186px 0 150px 195px;
+        margin: -173px 0 150px 10em;
     }
 
     #familial i {
@@ -788,6 +796,7 @@ i {
         background-color: #DEEBFF;
         margin-right: 10px;
         border-left-style: none;
+        padding: 13px 15px 13px 16px;
     }
 
     #animaux {
@@ -805,6 +814,7 @@ i {
         background-color: #DEEBFF;
         margin-right: 10px;
         border-left-style: none;
+        padding: 13px 13px 12px 14px;
     }
 
     .info {

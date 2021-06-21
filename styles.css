@@ -571,9 +571,8 @@ i {
     justify-content: space-around;
     max-width: 1440px;
     margin: auto;
-    margin-left: -5%;
     width: 95%;
-    margin: auto;
+    margin-left: 6em;
     max-width: 1440px;
  }
 
@@ -585,7 +584,7 @@ i {
  /* MEDIA QUERIES */
 
 
- @media screen and (max-width: 767px), (min-width: 768px) and (max-width: 1024px) {
+ @media screen and (max-width: 767px)s, (min-width: 768px) and (max-width: 1024px) {
      
     body {
         width: 100%;
@@ -680,11 +679,11 @@ i {
 
     h1 {
         width: 94%;
-        font-size: 22px;
+        font-size: 100%;
     }
 
     .titre-site p {
-        font-size: small;
+        font-size: 74%;
     }
     
     .champs-recherche {
@@ -786,7 +785,7 @@ i {
 
     #familial {
         order: 4;
-        margin: -173px 0 150px 10em;
+        margin: -173px 0 150px 9.5em;
     }
 
     #familial i {
@@ -1004,7 +1003,7 @@ i {
         display: flex;
         flex-direction: column;
         width: 98%;
-        margin-left: 5%;
+        margin-left: 7%;
     }
 
     .footer div section:last-child {

@@ -95,7 +95,7 @@ li a:hover {
 }
 
 .nav-inscription a {
-    color: #0065FC;
+    color: #0065FC !important;
 }
 
 /*MAIN*/
@@ -365,7 +365,6 @@ i {
 
 .titre {
     font-weight: bold;
-    font-size: 80%;
     margin-top: 10px;
 }
 
@@ -590,7 +589,8 @@ i {
  /* MEDIA QUERIES */
 
 
- @media screen and (max-width: 767px), (min-width: 768px) and (max-width: 1024px) {
+
+ @media screen and (max-width: 767px) {
      
     body {
         width: 100%;
@@ -1010,4 +1010,172 @@ i {
         margin-right: 0;
     }
 
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+     
+    .flex-container {
+        width: 90%;
+    }
+
+     .logo img {
+         width: 100% !important;
+     }
+
+     .champs-filtres {
+         width: 100%;  
+    }
+
+    .filtre {
+        margin-left: 1%;
+    }
+
+    .recherche .filtre p {
+        margin-top: 8px;
+        align-self: center;
+        font-size: 73%;
+    }
+    
+    .filtre i {
+        padding: 11px 10px 11px 10px;
+    }
+
+    #familial i {
+        padding: 11px 13px 11px 14px;
+    }
+
+    #romantique i {
+        padding: 11px 11px 10px 12px;
+    }
+
+    #listehebergements {
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .populaires {
+        order: 1;
+        width: 100%;
+    }
+
+    .titre-populaire {
+        padding: 3px 4% 5px 4%;
+    }
+
+    .offre-populaire {
+        margin-bottom: 1em;
+    }
+
+
+    .offre-populaire figure {
+        margin: auto;
+        width: 92%;
+    }
+
+
+    .offre-populaire .img3 img {
+        width: 40%;
+    }
+
+    .hebergements {
+        order: 2;
+        width: 100%;
+        margin-top: 2em;
+        height: auto;
+    }
+
+    .hebergements h2 {
+        margin-left: 3%;
+    }
+
+    .liste-offres {
+        height: auto;
+    }
+
+    .liste-offres .offres {
+        width: 46%;
+        height: auto;
+    }
+
+    #listeactivites {
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+
+    #listeactivites div {
+        display: flex;
+        flex-wrap: wrap;
+        order: 2;
+    }
+
+    #listeactivites .liste-activites div {
+        width: 100%;
+        display: flex;
+       flex-direction: row;
+    }
+
+    #listeactivites div a {
+        width: 50%;
+    }
+
+    #listeactivites figure {
+        width: 95%;
+    }
+
+    #listeactivites div figure {
+        border-radius: 20px;
+        box-shadow: 1px 2px 4px 2px #c3c3c3;
+        margin-top: 10px;
+    }
+
+    .port {
+        order: 1;
+    }
+
+    .parc-national {
+        order: 2;
+    }
+
+    .activite-2 {
+        height: auto;
+    }
+
+    .activite-3 {
+        height: auto;
+    }
+
+    .activite-5 {
+        height: auto;
+    }
+
+    .activite-6 {
+        height: auto;
+    }
+
+    #listeactivites div img {
+        border-radius: 20px 20px 0 0;
+        height: 8em;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer div {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        margin-left: 7%;
+    }
+
+    .footer div section {
+        width: 100%;
+    }
+
+    .footer div section:last-child {
+        margin-bottom: 28px;
+        margin-right: 0;
+    }
  }

@@ -19,7 +19,6 @@ body {
 
 .flex-container { 
     font-family: "Raleway-Medium";
-    width: 95%;
     margin: auto;
     max-width: 1440px;
 }
@@ -108,6 +107,10 @@ main {
     margin-bottom: 3%;
 }
 
+.titre-site p {
+    margin-top: 0;
+}
+
     /* SEARCH BOX*/
 
 form {
@@ -163,14 +166,14 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     }
 
+.champs-recherche {
+    margin-bottom: 50px;
+}
+
 .recherche { 
     height: 30% ;
     padding-bottom: 1% ;
     color: Black;
-}
-
-.recherche  div p {
-    margin-top:-10px
 }
 
 .recherche .filtre p {
@@ -185,12 +188,10 @@ input[type=button], input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
     font-weight: bold;
     font-family: "Raleway-Medium";
     font-weight:600;
     align-items: center;
-    margin-right: 24em;
     width: 68%;
 }
 
@@ -221,6 +222,10 @@ input[type=button], input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.recherche .titre-filtre p {
+    margin-top: 0;
 }
 
 .filtre i {
@@ -642,7 +647,7 @@ i {
 
     header nav {
         order: 2;
-        width: 105%;
+        width: 100%;
     }
 
 
@@ -728,10 +733,6 @@ i {
         border-radius: 1em;
     }
 
-    .champs-recherche form i  {
-        padding: 6% 4% 4% 4%;;
-    }
-
     .champs-recherche form .search {
         display: flex;
         margin-left: 15px;
@@ -751,12 +752,10 @@ i {
 
     .champs-filtres {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        max-height: 25em;
         align-items: baseline;
-        padding: 70px 0 0 0;
-        width: 100%;
+        margin-bottom: 20px;
     }
 
     .champs-filtres p {
@@ -791,11 +790,6 @@ i {
         font-size: 86%;
     } 
 
-    #familial {
-        order: 4;
-        margin: -173px 0 150px 9.5em;
-    }
-
     #familial i {
         border: solid;
         border-style: none;
@@ -804,14 +798,6 @@ i {
         margin-right: 10px;
         border-left-style: none;
         padding: 13px 15px 13px 16px;
-    }
-
-    #animaux {
-        order: 3;
-    }
-
-    #romantique {
-        order: 2;
     }
 
     #romantique i {
@@ -835,7 +821,7 @@ i {
         border-style: solid;
         border-width: 1px;
         align-self: flex-start;
-        margin-bottom: 30px;
+        margin: 0 15px 0 0;
     }
 
 

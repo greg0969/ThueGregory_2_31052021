@@ -411,6 +411,7 @@ i {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .offre-populaire {
@@ -564,21 +565,22 @@ i {
 
  /* FOOTER */
 
- .footer {
+ footer {
      font-family: "Raleway-Medium";
      padding-top: 20px;
      background-color: #f2f2f2;
+ }
+
+ .footer {
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
  }
 
  .footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 1440px;
-    margin: auto;
-    width: 95%;
-    margin-left: 6em;
-    max-width: 1440px;
  }
 
  .footer div section {
@@ -856,7 +858,7 @@ i {
     }
 
     .liste-offres-populaires {
-        margin-left: 3%;
+        
     }
 
     .offre-populaire figure  {
@@ -886,7 +888,7 @@ i {
 
     .populaires .offre-populaire {
         width: 90%;
-        height: 10em;
+        margin-bottom: 20px;
     }
 
     .liste-offres-populaires .liste-offres {

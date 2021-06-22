@@ -188,11 +188,9 @@ input[type=button], input[type=submit], input[type=reset] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-weight: bold;
-    font-family: "Raleway-Medium";
-    font-weight:600;
     align-items: center;
     width: 68%;
+    font-weight: bold;
 }
 
 .champs-filtres p {
@@ -208,6 +206,7 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 50%;
     border-color: #DEEBFF;
     border-style: solid;
+    
 }
 
 
@@ -226,6 +225,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .recherche .titre-filtre p {
     margin-top: 0;
+    font-weight: bold;
 }
 
 .filtre i {

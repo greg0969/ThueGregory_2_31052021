@@ -27,13 +27,13 @@ body {
     color: black;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
 h2 {
     font-size: 20px;
     font-family: "Raleway-Bold";
-}
-
-p {
-    font-size: 95%;
 }
 
 /* header */

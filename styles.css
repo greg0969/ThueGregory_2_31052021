@@ -757,6 +757,7 @@ i {
         flex-wrap: wrap;
         align-items: baseline;
         margin-bottom: 20px;
+        width: 90%;
     }
 
     .champs-filtres p {

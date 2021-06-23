@@ -269,10 +269,12 @@ input[type=button], input[type=submit], input[type=reset] {
     padding-top: 1em;
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .info p {
-    align-self: flex-end;
+    align-self: baseline;
+    margin: 0;
 }
 
 .info .fa-info {

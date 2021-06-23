@@ -137,10 +137,12 @@ form i {
 .searchbox .bouton-recherche {
     background-color: #0065FC;
     color: white;
-    padding: 15px 20px 15px 20px;
-    font-weight: 300;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.searchbox .bouton-recherche p {
+    font-weight: 300;
 }
 
 .fa-search {
@@ -739,15 +741,15 @@ i {
         width:100%;
     }
 
-    .champs-recherche form .bouton-recherche {
+    .champs-recherche form .bouton-recherche p {
         display: none;
     }
 
     .searchbox span {
-    background-color: #0065FC;
-    color: white;
-    padding: 17px;
-    border-radius: 23%;
+        background-color: #0065FC;
+        color: white;
+        padding: 17px;
+        border-radius: 23%;
     }
 
     .champs-filtres {
